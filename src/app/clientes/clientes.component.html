@@ -15,6 +15,7 @@
                     <th>apellido</th>
                     <th>email</th>
                     <th>fecha</th>
+                    <th>Editar</th>
                 </tr>
             </thead>
             <tbody>
@@ -24,6 +25,9 @@
                     <th>{{ cliente.apellido }}</th>
                     <th>{{ cliente.email }}</th>
                     <th>{{ cliente.createAt }}</th>
+                    <th>
+                        <button type="button" [routerLink]="['/clientes/registrar', cliente.id]" class="btn btn-primary" >editar</button>
+                    </th>
                 </tr>
             </tbody>
         </table>
